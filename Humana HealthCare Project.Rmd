@@ -159,11 +159,6 @@ colAUC(p1, training_data$transportation_issues)
 # ROC on the Testing Data
 p2 <- predict(base_logistic, testing_data, type = 'prob')
 colAUC(p2, testing_data$transportation_issues)
-
-# ROC             
-# 0.7421707
-# 0.7367148
-# 0.7424206
 ```
 
 # Gradient Boosting Machine
@@ -200,9 +195,6 @@ colAUC(p7, training_data$transportation_issues)
 # ROC on the Testing Data
 p8 <- predict(GBM_model, testing_data, type = 'prob')
 colAUC(p8, testing_data$transportation_issues, plotROC = T)
-
-# ROC        
-# 0.7485573
 ```
 
 
